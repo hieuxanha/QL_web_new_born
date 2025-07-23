@@ -1,0 +1,281 @@
+  /*  */
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "ValueSansProVN", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--mainColor);
+}
+
+:root {
+    --mainColor: #58595b;
+    --brandColor: #d0b49e;
+    --s-radius: 10px;
+    --mainRed: #db9087;
+    --vanhBlack: #212121;
+}
+
+/* Header */
+header {
+    
+    border-bottom: 1px solid rgb(232, 232, 232);
+}
+
+.container_header {
+    padding: 0 100px;
+    /* border-bottom: 1px solid rgb(64, 54, 54); */
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 10px 10px 10px;
+    background-color: #fff;
+    /* border-bottom: 1px solid #e0e0e0; */
+}
+
+.logo {
+    flex: 2;
+}
+
+.logo img {
+    padding-left: 10px;
+    height: 45px;
+}
+
+.search-bar {
+    flex: 3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    position: relative;
+}
+
+.search-bar input {
+    all: unset;
+    /* Loại bỏ tất cả các kiểu mặc định */
+    display: inline-block;
+    /* Đảm bảo input vẫn hiển thị như một phần tử inline */
+    border: none;
+    /* Loại bỏ viền mặc định */
+    outline: none;
+    /* Loại bỏ đường viền khi focus */
+    background: none;
+    /* Loại bỏ nền */
+    margin: 0;
+    /* Loại bỏ margin */
+    padding: 0;
+    /* Loại bỏ padding */
+    font: inherit;
+    /* Thừa hưởng font từ phần tử cha */
+    cursor: text;
+    /* Thay đổi con trỏ khi hover vào input */
+    border-radius: 0;
+    /* Loại bỏ góc bo (nếu có) */
+}
+
+.search-bar input {
+    width: 100%;
+    padding: 6px 15px;
+    /* border: 1px solid #ccc; */
+    border: none;
+    border-radius: 8px;
+    background-color: #f4f4f4;
+}
+
+.search-bar .search-button {
+    background-color: #d6b2a2;
+    border: none;
+    padding: 6px 15px;
+    margin-left: 10px;
+    border-radius: 8px;
+    cursor: pointer;
+
+    position: absolute;
+    right: 0;
+}
+
+.search-bar .search-button:hover {
+    background-color: #c0987a;
+}
+
+.menu {
+    flex: 3;
+    display: flex;
+    justify-content: space-around;
+    font-size: 14px;
+    padding: 0;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #4e4e4e;
+    padding: 10px;
+    font-size: 15px;
+}
+
+.menu a:hover {
+    color: #d6b2a2;
+}
+
+.account {
+    flex: 2;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.account a {
+    margin-left: 20px;
+    text-decoration: none;
+    color: #000000;
+}
+
+.account a:hover {
+    color: #d6b2a2;
+}
+
+
+/* phần dưới */
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.cart {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+     /* box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); */
+}
+
+.cart-left {
+    flex: 2;
+}
+
+.cart-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.cart-item img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.details {
+    flex: 1;
+    margin-left: 20px;
+}
+
+.details h3 {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.details p {
+    font-size: 14px;
+    color: #777;
+}
+
+.price {
+    font-size: 16px;
+    font-weight: bold;
+    color: #ff6b6b;
+}
+
+.quantity {
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+}
+
+.quantity input {
+    width: 40px;
+    text-align: center;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin: 0 10px;
+}
+
+
+.quantity button {
+    background-color: #ff6b6b;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 15px;
+}
+
+.cart-right {
+    flex: 1;
+    background-color: #fff5f0;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    text-align: right;
+}
+
+.order-info {
+    margin-top: 20px;
+}
+
+.total {
+    font-size: 15px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.order-button {
+    background-color: #ff6b6b;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 13px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.order-button:hover {
+    background-color: #ff3b3b;
+}
+
+input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+.abc{
+
+    color: #999;
+    font-size: 13px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #cdcdcd;
+}
+
+textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+    margin-top: 10px;
+    font-size: 14px;
+}

@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Phiếu Đánh Giá Thực Tập</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+      line-height: 1.6;
+      background-color: #f9f9f9;
+    }
+    h1 {
+      text-align: center;
+      color: #333;
+    }
+    h2 {
+      margin-top: 30px;
+      color: #444;
+    }
+    label {
+      display: block;
+      margin: 10px 0 5px;
+    }
+    input[type="text"], textarea, select {
+      width: 100%;
+      padding: 8px;
+      box-sizing: border-box;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 15px;
+    }
+    th, td {
+      border: 1px solid #aaa;
+      padding: 8px;
+      text-align: left;
+    }
+    .checkboxes label {
+      display: inline-block;
+      margin-right: 15px;
+    }
+    .submit-btn {
+      margin-top: 20px;
+      padding: 10px 20px;
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <h1>PHIẾU ĐÁNH GIÁ QUÁ TRÌNH THỰC TẬP</h1>
+
+  <h2>1. Thông tin cơ sở thực tập</h2>
+  <label>Tên cơ sở</label><input type="text">
+  <label>Người hướng dẫn</label><input type="text">
+  <label>Chức vụ</label><input type="text">
+  <label>Email liên hệ</label><input type="text">
+  <label>Số điện thoại</label><input type="text">
+
+  <h2>2. Thông tin sinh viên</h2>
+  <label>Họ và tên sinh viên</label><input type="text">
+  <label>Mã số sinh viên</label><input type="text">
+  <label>Lớp - Khóa</label><input type="text">
+  <label>Ngành học</label><input type="text">
+  <label>Thời gian thực tập</label><input type="text" placeholder="Từ ... đến ...">
+
+  <h2>3. Nội dung đánh giá</h2>
+  <table>
+    <thead>
+      <tr>
+        <th>Tiêu chí đánh giá</th>
+        <th>Mức độ</th>
+        <th>Ghi chú</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Thái độ, tinh thần trách nhiệm</td>
+        <td class="checkboxes">
+          <label><input type="checkbox"> Xuất sắc</label>
+          <label><input type="checkbox"> Tốt</label>
+          <label><input type="checkbox"> Trung bình</label>
+          <label><input type="checkbox"> Yếu</label>
+        </td>
+        <td><input type="text"></td>
+      </tr>
+      <tr>
+        <td>Kỹ năng chuyên môn</td>
+        <td class="checkboxes">
+          <label><input type="checkbox"> Xuất sắc</label>
+          <label><input type="checkbox"> Tốt</label>
+          <label><input type="checkbox"> Trung bình</label>
+          <label><input type="checkbox"> Yếu</label>
+        </td>
+        <td><input type="text"></td>
+      </tr>
+      <tr>
+        <td>Khả năng làm việc nhóm</td>
+        <td class="checkboxes">
+          <label><input type="checkbox"> Xuất sắc</label>
+          <label><input type="checkbox"> Tốt</label>
+          <label><input type="checkbox"> Trung bình</label>
+          <label><input type="checkbox"> Yếu</label>
+        </td>
+        <td><input type="text"></td>
+      </tr>
+      <tr>
+        <td>Kỹ năng giao tiếp</td>
+        <td class="checkboxes">
+          <label><input type="checkbox"> Xuất sắc</label>
+          <label><input type="checkbox"> Tốt</label>
+          <label><input type="checkbox"> Trung bình</label>
+          <label><input type="checkbox"> Yếu</label>
+        </td>
+        <td><input type="text"></td>
+      </tr>
+      <tr>
+        <td>Khả năng thích nghi với môi trường</td>
+        <td class="checkboxes">
+          <label><input type="checkbox"> Xuất sắc</label>
+          <label><input type="checkbox"> Tốt</label>
+          <label><input type="checkbox"> Trung bình</label>
+          <label><input type="checkbox"> Yếu</label>
+        </td>
+        <td><input type="text"></td>
+      </tr>
+      <tr>
+        <td>Tuân thủ nội quy, kỷ luật</td>
+        <td class="checkboxes">
+          <label><input type="checkbox"> Xuất sắc</label>
+          <label><input type="checkbox"> Tốt</label>
+          <label><input type="checkbox"> Trung bình</label>
+          <label><input type="checkbox"> Yếu</label>
+        </td>
+        <td><input type="text"></td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h2>4. Nhận xét chung</h2>
+  <textarea rows="4"></textarea>
+
+  <h2>5. Kết quả đề xuất</h2>
+  <label><input type="checkbox"> Đạt yêu cầu</label>
+  <label><input type="checkbox"> Chưa đạt yêu cầu</label>
+  <label><input type="checkbox"> Đề nghị khen thưởng</label>
+  <label><input type="checkbox"> Đề nghị không công nhận</label>
+
+  <label>Ngày đánh giá</label><input type="text">
+  <label>Người đánh giá (ký tên, ghi rõ họ tên)</label><input type="text">
+
+  <button class="submit-btn">Gửi đánh giá</button>
+</body>
+</html>
